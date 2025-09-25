@@ -55,7 +55,12 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     "corsheaders.middleware.CorsMiddleware"
 ]
+
 CORS_ALLOW_ALL_ORIGINS = True  # 개발단계에서는 모두 허용
+CORS_ALLOWED_ORIGINS = [
+    "http://localhost:3000",
+    "https://jakdang.site",
+]
 
 ROOT_URLCONF = 'mysite.urls'
 
